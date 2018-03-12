@@ -1,6 +1,6 @@
 {
   "name": "@seedrs/serverless-rdbms-migrations",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A language agnostic plugin that invokes a lambda to perform database migrations",
   "main": "index.js",
   "repository": "https://github.com/Seedrs/serverless-rdbms-migrations",

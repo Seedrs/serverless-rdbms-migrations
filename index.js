@@ -40,8 +40,8 @@ class ServerlessPlugin {
     this.hooks = {
       'after:deploy:deploy': this.migrate.bind(this),
       'after:rollback:rollback': this.rollback.bind(this),
-      'migrate:down': this.rollback.bind(this),
-      'migrate:up': this.migrate.bind(this)
+      'migrate:down:down': this.rollback.bind(this),
+      'migrate:up:up': this.migrate.bind(this)
     };
   }
 
