@@ -41,7 +41,7 @@ class ServerlessPlugin {
       'after:deploy:deploy': this.migrate.bind(this),
       'after:rollback:rollback': this.rollback.bind(this),
       'migrate:down': this.rollback.bind(this),
-      'migrate:up': this.afterDeploy.bind(this)
+      'migrate:up': this.migrate.bind(this)
     };
   }
 
